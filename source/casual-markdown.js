@@ -175,8 +175,10 @@
   md.html = function (mdText) { 
     // if the entire resume is in an indent, remove it so markdown can be parsed correctly
     const indent = mdText.match(/^\n{0,}(\s{2,})#/)
-    // count the number of spaces in indent$1
+    // count the number of spaces in indent
     const indentLength = indent ? indent[1].length + 1: 0
+    // remove the indent from the markdown
+    mdText = mdText.replace(new RegExp(`^\\s{0,${indentLength}}`, 'gm'), '')
 
     // replace \r\n to \n, and handle front matter for simple YAML
     mdText = mdText.replace(/\r\n/g, '\n').replace( /^---+\s*\n([\s\S]*?)\n---+\s*\n/, md.formatYAML )
