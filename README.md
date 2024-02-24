@@ -1,4 +1,5 @@
-## casual-markdown
+## resume-markdown
+Built from [casual-markdown](https://github.com/casualwriter/casual-markdown) with a simple addition
 
 A lightweight RegExp-based markdown parser, with TOC, scrollspy and frontmatter support
 
@@ -15,21 +16,16 @@ for the following features
 * frontmatter for simple YAML
 * extendable (by override md.before, md.after, md.formatCode, md.formatYAML)
 
+Added Right, Center, and Left align headers with subheaders. Useful for dates in a resume (cv)
+
 
 ### Usage Guide
 
-just simply include [casual-markdown.js](https://github.com/casualwriter/casual-markdown/blob/main/source/casual-markdown.js) from CDN or local.  
+just simply include [casual-markdown.js](https://github.com/Vio-Eli/resume-markdown/blob/main/dist/casual-markdown%400.92.1.js) from CDN or local.  
 
 ~~~ 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.css">
-<script src="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.js"></script>
-~~~ 
-
-or github-page (may specify version no)
-
-~~~ 
-<link rel="stylesheet" href="https://casualwriter.github.io/dist/casual-markdown@0.92.css">
-<script src="https://casualwriter.github.io/dist/casual-markdown@0.92.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Vio-Eli/resume/css/light-packed.css">
+<script src="https://cdn.jsdelivr.net/gh/Vio-Eli/resume-markdown/dist/casual-markdown@0.92.1.js"></script>
 ~~~ 
 
 or may download `casual-markdown.js, casual-markdown.css` and include them locally.
@@ -182,4 +178,5 @@ and html string with ``{{ name }}`` will be replaced with related values
 * 2022/07/22, v0.85, frontmatter for simple YAML
 * 2022/07/31, v0.90, refine frontmatter. code casual-markdown-doc.js, casual-markdown-page.html
 * 2023/04/12, v0.92, add copy feature for code-block. minor fine-tune.
+* 2024/02/23, v0.92.1 added header alignment features (vio-eli)
 
